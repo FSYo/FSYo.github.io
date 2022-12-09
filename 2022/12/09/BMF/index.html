@@ -9,7 +9,7 @@
     
     <title>
         
-            分类: life |
+            BMF |
         
         FSYo
     </title>
@@ -110,7 +110,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/categories"
                             >
                                 分类
@@ -143,7 +143,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/categories">分类</a>
                 </li>
             
@@ -163,49 +163,151 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="category-container">
-        <div class="category-name">
-            <i class="fas fa-folder"></i>&nbsp;life
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation"><h1 style="font-size:2rem; font-weight: bold; margin: 10px 0;">BMF</h1></span>
         </div>
-        <div class="category-post-list">
-            
-<div class="archive-list-container">
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">FSYo</span>
+                        
+                            <span class="author-label">lol</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-duotone fa-pen-line"></i>&nbsp;
+        <span class="pc">2022-12-09 11:08:45</span>
+        <span class="mobile">2022-12-09 11:08</span>
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[2]</span>
-            </div>
-            <ul class="article-list">
+        <span class="article-categories article-meta-item">
+            <i class="fa-duotone fa-folder-open"></i></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/12/08/%E5%86%8D%E8%A7%81%EF%BC%8C%E5%8C%97%E4%BA%AC/"
-                        >再见，北京</a>
-                        <span class="article-date">12-08</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/11/27/helloworld/"
-                        >helloworld</a>
-                        <span class="article-date">11-27</span>
+                    <li>
+                        <a href="/categories/learn/">learn</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-duotone fa-tags"></i></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%A6%82%E8%AE%BA/">计算概论</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>homomorphism 的定义：</p>
+<p>$h[]&#x3D;id_{\oplus}\h[a]&#x3D;f\ a\h(x++y)&#x3D;h\ x\oplus h\ y$ </p>
+<p>即 $([\alpha],++,[])$ 到 $(\beta,\oplus,id_{\oplus})$ 的一个同态变换</p>
+<p>一个 homomorphism $h$ 可以表示为 $h&#x3D;\oplus&#x2F;\cdot f*$ </p>
+<p><strong>Horner’s Rule</strong></p>
+<p>$\oplus&#x2F;\cdot \otimes &#x2F;*\cdot tails&#x3D;\odot\nrightarrow_e\ where: e&#x3D;id_{\otimes},a\odot b&#x3D;(a\otimes b)\oplus e$  </p>
+<p>满足，若有 $(a\oplus b)\otimes c&#x3D;(a\otimes c)\oplus (b\otimes c)$</p>
+<p>证明：</p>
+<p>given $(a\oplus b)\otimes c&#x3D;(a\otimes c)\oplus (b\otimes c)$，we have </p>
+<ol>
+<li><p>$\big<a href="%5Bx%5D">(\otimes c)\cdot \oplus&#x2F;\big</a>&#x3D;(\otimes c)(x)&#x3D;c\otimes x&#x3D;(\otimes c)*([x])&#x3D;\big(\oplus&#x2F;\cdot (\otimes c)*\big)([x])$ </p>
+</li>
+<li><p>$\big<a href="%5Bx%5D++xs">(\otimes c)\cdot \oplus&#x2F;\big</a>\&#x3D;(\otimes c)([x]\oplus (\oplus&#x2F;xs))\&#x3D;(c\otimes x)\oplus\big[\big((\otimes c)\cdot \oplus&#x2F;\big)(xs)\big]\&#x3D;(c\otimes x)\oplus \big[\big((\oplus &#x2F;)\cdot (\otimes c)*\big)(xs)\big]\&#x3D;\big((\oplus &#x2F;)\cdot (\otimes c)*\big)([x]++xs)$</p>
+</li>
+</ol>
+<p>given $(\otimes c)\cdot \oplus&#x2F;&#x3D;(\oplus &#x2F;)\cdot (\otimes c)*$，we have</p>
+<p>$\big((\otimes c)\cdot \oplus&#x2F;\big)([a]++[b])&#x3D;\big((\oplus &#x2F;)\cdot (\otimes c)*\big)([a]++[b])$</p>
+<p>which means $c\otimes (a\oplus b)&#x3D;(c\otimes a)\oplus (c\otimes b)$ </p>
+<p>Then</p>
+<p>$f\ []&#x3D;(\otimes &#x2F;\cdot\otimes &#x2F;*\cdot tails)&#x3D;e&#x3D;id_{\otimes}$</p>
+<p>$f(x++[a])&#x3D;(\otimes &#x2F;\cdot\otimes &#x2F;<em>\cdot tails)(x++[a])\&#x3D;(\otimes &#x2F;\cdot\otimes &#x2F;</em>)(\Big((++[a])&#x2F;  tails(x)\Big)++[])\&#x3D;\oplus&#x2F;\Big[(\otimes a*) (\otimes &#x2F;<em>)tails(x)++[e]\Big]\&#x3D; (\big[(\oplus&#x2F;)(\otimes&#x2F;</em>)tails(x)\big]\otimes a)\oplus e… \Big(this\ step\ have \ been \ proved \ in \ problem \ 1\Big)\&#x3D;f\ x\odot a, where \ x \odot y&#x3D;(x\otimes y)\oplus e $</p>
+<p><strong>使用 BMF 证明 Max Segment Sum</strong></p>
+<p>$MSS\&#x3D;\uparrow&#x2F;\cdot +&#x2F;*\cdot segs\&#x3D;\uparrow&#x2F;\cdot +&#x2F;<em>\cdot ++&#x2F;\cdot tails</em>\cdot inits\&#x3D;\uparrow&#x2F;\cdot(\uparrow&#x2F;\cdot +&#x2F;*\cdot tails)<em>\cdot inits \  \ \ &lt;\oplus&#x2F;\cdot++&#x2F;&#x3D;\oplus&#x2F;\cdot(\oplus&#x2F;)*&gt;\&#x3D;\uparrow \cdot \odot\nrightarrow_0</em>inits\ \ \ &lt;a \odot b&#x3D;(a+b)\uparrow 0&gt;\&#x3D;\uparrow \cdot \odot\rightarrow_0$  </p>
+<p>即证</p>
 
         </div>
-    </div>
-    <div class="category-paginator">
-        <div class="paginator">
-    
 
-    
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：BMF</li>
+        <li>本文作者：FSYo</li>
+        <li>创建时间：2022-12-09 11:08:45</li>
+        <li>
+            本文链接：https://redefine.evanluo.top/2022/12/09/BMF/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
 </div>
 
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%A6%82%E8%AE%BA/">#计算概论</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/12/08/%E5%86%8D%E8%A7%81%EF%BC%8C%E5%8C%97%E4%BA%AC/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">再见，北京</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
     </div>
 </div>
 
@@ -252,6 +354,23 @@
     </div>
 
     
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fa-duotone fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
 
     <div class="right-bottom-side-tools">
         <div class="side-tools-container">
@@ -297,6 +416,15 @@
     </div>
 
     
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list-tree"></i> <strong>目录</strong></div>
+        
+    </div>
+</div>
+        </aside>
+    
 
     <div class="image-viewer-container">
     <img src="">
@@ -336,6 +464,14 @@
 
 
 <div class="post-scripts pjax">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 
